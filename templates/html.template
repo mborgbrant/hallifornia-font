@@ -21,14 +21,14 @@
 		<meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 
-		<link href="css/<%= fontName %>.css" rel="stylesheet">
+		<link href="css/<%= fontName %>.min.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<style>
 			body { padding: 0; margin: 0; background: #cecece; font-family: 'Oswald', sans-serif, verdana; }
 			h1, h2 { margin: 0; padding: 0; font-family: 'Permanent Marker', cursive; }
 			p { margin: 0; padding-top: 25px; padding-bottom: 25px; }
 			a { text-decoration: none; color: #e0e0e0; }
-			a:hover { color: #ef7521; border-bottom: 2px solid #e5e5e5; }
+			a:hover { color: #ef7521; border-bottom: 2px solid #ef7521; }
 			small { font-size: 70%; }
 			.content-container { text-align: center; max-width: 90%; margin: 0 auto; background: #eee; padding-top: 40px; }
 			.page-section { position: fixed; background: rgba(51, 61, 71, 0.97); top: 0; left: 0; width: 100%; box-shadow: 0px 7px 20px 0px rgba(20,20,20,0.75); margin-bottom: 20px; }

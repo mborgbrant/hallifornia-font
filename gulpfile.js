@@ -4,6 +4,7 @@ const consolidate = require('gulp-consolidate');
 const iconfont = require('gulp-iconfont');
 const rename = require('gulp-rename');
 const zip = require('gulp-zip');
+const cleanCss = require('gulp-clean-css');
 
 const fontName = 'hallifornia-font';
 const version = '0_1b';
@@ -54,8 +55,18 @@ gulp.task('default', function (done) {
 				.pipe(gulp.dest('www/fonts/'))
 				.on('finish', cb);
 		},
+		function handleMinifing(cb) {
+			gulp.src('www/css/' + fontName + '.css')
+				.pipe(cleanCss({ compatibility: 'ie8' }))
+				.pipe(rename({
+					basename: fontName,
+					extname: '.min.css'
+				}))
+				.pipe(gulp.dest('www/css'))
+				.on('finish', cb);
+		},
 		function handlePackage(cb) {
-			gulp.src(['!./www/download', '!./www/download/**', '!./www/*.html', 'www/**'])
+			gulp.src(['!./www/download', '!./www/download/**', '!./www/favicons', '!./www/favicons/**', '!./www/*.html', 'www/**'])
 				.pipe(zip('hallifornia_font_' + version + '.zip'))
 				.pipe(gulp.dest('www/download'))
 				.on('finish', cb);
