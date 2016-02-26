@@ -7,7 +7,7 @@ const zip = require('gulp-zip');
 const cleanCss = require('gulp-clean-css');
 
 const fontName = 'hallifornia-font';
-const version = '0_1b';
+const version = '0_2b';
 const runTimestamp = Math.round(Date.now() / 1000);
 
 gulp.task('default', function (done) {
