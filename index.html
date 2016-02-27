@@ -32,7 +32,7 @@
 			.content-container { text-align: center; max-width: 90%; margin: 0 auto; background: #eee; padding-top: 40px; overflow-x: hidden; }
 			.page-section { z-index: 9999999; position: fixed; background: rgba(51, 61, 71, 0.94); top: 0; left: 0; width: 100%; box-shadow: 0px 7px 20px 0px rgba(20,20,20,0.75); margin-bottom: 20px; }
 			.icon-section { margin-top: 230px; margin-left: 8px; }
-			.icon-item { display: inline-block; width: 150px; text-align: center; background: #dcdcdc; margin: 0 8px 12px 0px; padding: 8px; border-radius: 20px; border: solid 2px #e0e0e0; transition: 0.3s all ease-in-out; }
+			.icon-item { display: inline-block; min-height: 150px; width: 150px; text-align: center; background: #dcdcdc; margin: 0 8px 12px 0px; padding: 8px; border-radius: 20px; border: solid 2px #e0e0e0; transition: 0.3s all ease-in-out; }
 			.hf { color: #ef7521; }
 			.icon-caption { font-size: 12px; padding: 6px 4px 6px 6px; }
 			.primary-color { color: #e0e0e0; }
@@ -53,11 +53,12 @@
 			@media (max-width: 480px) {
 				.icon-item {
 					width: 110px;
+					min-height: 110px;
 				}
 				.icon {
 					font-size: 2em;
 				}
-				.icon-caption { font-size: 8px; }
+				.icon-caption { font-size: 10px; }
 				.content-container { max-width: 100% }
 				p {
 					padding-top: 8px;
