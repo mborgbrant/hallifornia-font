@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<title>Hallifornia Font</title>
 
@@ -36,35 +36,21 @@
 			.hf { color: #ef7521; }
 			.icon-caption { font-size: 12px; padding: 6px 4px 6px 6px; }
 			.primary-color { color: #e0e0e0; }
-
-			.icon-item:hover {
-				background-color: #333d47; color: #f0f0f0;
-				webkit-transform:scale(1.25) rotate(360deg); -moz-transform:scale(1.25) rotate(360deg); -ms-transform:scale(1.25) rotate(360deg); -o-transform:scale(1.25) rotate(360deg); transform:scale(1.25) rotate(-5deg); border-radius: 50%;
-				border: solid 2px #ef7521;
-				position: relative;
-				top: 0;
-				left: 0;
-				z-index: 999999;
-			}
-			.icon {
-				font-size: 4em;
-			}
+			.icon-item:hover { webkit-transform:scale(1.25) rotate(360deg); -moz-transform:scale(1.25) rotate(360deg); -ms-transform:scale(1.25) rotate(360deg); -o-transform:scale(1.25) rotate(360deg); transform:scale(1.25) rotate(-5deg); border-radius: 50%; border: solid 2px #ef7521; position: relative; top: 0; left: 0; z-index: 999999; background-color: #333d47; color: #f0f0f0; }
+			.icon { font-size: 4em; }
 
 			@media (max-width: 480px) {
-				.icon-item {
-					width: 110px;
-					min-height: 110px;
-				}
-				.icon {
-					font-size: 2em;
-				}
+				.icon-item { width: 110px; min-height: 110px; }
+				.icon { font-size: 2em; }
 				.icon-caption { font-size: 10px; }
-				.content-container { max-width: 100% }
-				p {
-					padding-top: 8px;
-					padding-bottom: 8px;
-				}
+				.content-container { max-width: 100%; }
+				p { padding-top: 8px; padding-bottom: 8px; }
 				.icon-section { margin-top: 200px; }
+			}
+			@media (max-height: 480px) {
+				.page-section { position: static; }
+				.content-container { padding-top: 0px; max-width: 100%; }
+				.icon-section { margin-top: 20px; }
 			}
 		</style>
 	</head>
