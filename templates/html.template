@@ -1,8 +1,14 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
-		<title>Hallifornia Font</title>
+		<title>Hallifornia Font, a free symbol font</title>
 
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="description" content="A free symbol font to use stand alone or together with the included css" />
+		<meta name="author" content="Mikael Borgbrant">
+
+		<link rel="canonical" href="http://www.hallifornia-font.com">
 		<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
@@ -17,42 +23,55 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
 		<link rel="manifest" href="favicons/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
 
-		<link href="css/<%= fontName %>.css" rel="stylesheet">
+		<link href="css/<%= fontName %>.min.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
 		<style>
 			body { padding: 0; margin: 0; background: #cecece; font-family: 'Oswald', sans-serif, verdana; }
 			h1, h2 { margin: 0; padding: 0; font-family: 'Permanent Marker', cursive; }
-			p { margin: 0; padding-top: 25px; padding-bottom: 25px; }
+			p { margin: 0; padding-top: 15px; padding-bottom: 15px; }
 			a { text-decoration: none; color: #e0e0e0; }
-			a:hover { color: #ef7521; border-bottom: 2px solid #e5e5e5; }
+			a:hover { border-bottom: 2px solid #ef7521; }
 			small { font-size: 70%; }
-			.content-container { text-align: center; max-width: 90%; margin: 0 auto; background: #eee; padding-top: 40px; }
-			.page-section { position: fixed; background: rgba(51, 61, 71, 0.97); top: 0; left: 0; width: 100%; box-shadow: 0px 7px 20px 0px rgba(20,20,20,0.75); margin-bottom: 20px; }
-			.icon-section { margin-top: 260px; }
-			.icon-item { display: inline-block; width: 150px; text-align: center; background: #dcdcdc; margin: 0 8px 12px 0px; padding: 8px; border-radius: 8px; transition: 0.2s background linear; }
+			.content-container { text-align: center; max-width: 90%; margin: 0 auto; background: #eee; padding-top: 40px; overflow-x: hidden; }
+			.page-section { z-index: 9999999; position: fixed; background: rgba(51, 61, 71, 0.94); top: 0; left: 0; width: 100%; box-shadow: 0px 7px 20px 0px rgba(20,20,20,0.75); margin-bottom: 20px; }
+			.icon-section { margin-top: 230px; margin-left: 8px; }
+			.icon-item { display: inline-block; min-height: 150px; width: 150px; text-align: center; background: #dcdcdc; margin: 0 8px 12px 0px; padding: 8px; border-radius: 20px; border: solid 2px #e0e0e0; transition: 0.3s all ease-in-out; }
 			.hf { color: #ef7521; }
-			.icon-item:hover { background-color: #333d47; color: #f0f0f0; transition: 0.2s background linear; }
-			.icon-item:hover .hf { color: #f0f0f0; }
 			.icon-caption { font-size: 12px; padding: 6px 4px 6px 6px; }
 			.primary-color { color: #e0e0e0; }
+			.icon-item:hover { webkit-transform:scale(1.25) rotate(360deg); -moz-transform:scale(1.25) rotate(360deg); -ms-transform:scale(1.25) rotate(360deg); -o-transform:scale(1.25) rotate(360deg); transform:scale(1.25) rotate(-5deg); border-radius: 50%; border: solid 2px #ef7521; position: relative; top: 0; left: 0; z-index: 999999; background-color: #333d47; color: #f0f0f0; }
+			.icon { font-size: 4em; }
+
+			@media (max-width: 480px) {
+				.icon-item { width: 110px; min-height: 110px; }
+				.icon { font-size: 2em; }
+				.icon-caption { font-size: 10px; }
+				.content-container { max-width: 100%; }
+				p { padding-top: 8px; padding-bottom: 8px; }
+				.icon-section { margin-top: 200px; }
+			}
+			@media (max-height: 480px) {
+				.page-section { position: static; }
+				.content-container { padding-top: 0px; max-width: 100%; }
+				.icon-section { margin-top: 20px; }
+			}
 		</style>
 	</head>
 	<body>
 		<div class="content-container">
 			<div class="page-section">
+			<a href="https://github.com/mborgbrant/hallifornia-font"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
 			<p>
-				<span class="primary-color hf hf-5x hf-logo-hallifornia"></span>
+				<span class="hf hf-5x hf-logo-hallifornia"></span>
 				<h3><a href="download/hallifornia_font_<%= version %>.zip">Download Hallifornia Font <small>v<%= version.replace('_', '.') %></small></a></h3>
 			</p>
 			</div>
 			<div class="icon-section">
 			<% _.each(glyphs, function(glyph) { %>
-				<div class="icon-item">
-					<span class="<%= className %> <%= className %>-4x <%= className %>-<%= glyph.name %>"></span>
+				<div class="icon-item" onclick="">
+					<span class="icon <%= className %> <%= className %>-4x <%= className %>-<%= glyph.name %>"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> <%= glyph.name %></div>
 						<div><strong>html:</strong> &amp;#<%= glyph.unicode[0].charCodeAt(0) %>;</div>
@@ -62,5 +81,18 @@
 			<% }); %>
 			</div>
 		</div>
+
+		<% if (googleAnalyticsId.length > 0) { %>
+			<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga('create', '<%= googleAnalyticsId %>', 'auto');
+				ga('send', 'pageview');
+			</script>
+		<% }; %>
+
 	</body>
 </html>
