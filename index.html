@@ -3,6 +3,8 @@
 	<head>
 		<title>Hallifornia Font</title>
 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
@@ -17,9 +19,6 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
 		<link rel="manifest" href="favicons/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
 
 		<link href="css/hallifornia-font.min.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -32,19 +31,34 @@
 			small { font-size: 70%; }
 			.content-container { text-align: center; max-width: 90%; margin: 0 auto; background: #eee; padding-top: 40px; }
 			.page-section { z-index: 9999999; position: fixed; background: rgba(51, 61, 71, 0.94); top: 0; left: 0; width: 100%; box-shadow: 0px 7px 20px 0px rgba(20,20,20,0.75); margin-bottom: 20px; }
-			.icon-section { margin-top: 230px; }
+			.icon-section { margin-top: 230px; margin-left: 8px; }
 			.icon-item { display: inline-block; width: 150px; text-align: center; background: #dcdcdc; margin: 0 8px 12px 0px; padding: 8px; border-radius: 20px; border: solid 2px #e0e0e0; transition: 0.3s all ease-in-out; }
 			.hf { color: #ef7521; }
-			.icon-item:hover { background-color: #333d47; color: #f0f0f0; }
 			.icon-caption { font-size: 12px; padding: 6px 4px 6px 6px; }
 			.primary-color { color: #e0e0e0; }
 
-			.icon-item:hover { webkit-transform:scale(1.25) rotate(360deg); -moz-transform:scale(1.25) rotate(360deg); -ms-transform:scale(1.25) rotate(360deg); -o-transform:scale(1.25) rotate(360deg); transform:scale(1.25) rotate(-5deg); border-radius: 50%;
+			.icon-item:hover, .icon-item:focus {
+				background-color: #333d47; color: #f0f0f0;
+				webkit-transform:scale(1.25) rotate(360deg); -moz-transform:scale(1.25) rotate(360deg); -ms-transform:scale(1.25) rotate(360deg); -o-transform:scale(1.25) rotate(360deg); transform:scale(1.25) rotate(-5deg); border-radius: 50%;
 				border: solid 2px #ef7521;
 				position: relative;
 				top: 0;
 				left: 0;
 				z-index: 999999;
+			}
+			.icon {
+				font-size: 4em;
+			}
+
+			@media (max-width: 480px) {
+				.icon-item {
+					width: 75px;
+				}
+				.icon {
+					font-size: 2em;
+				}
+				.icon-caption { font-size: 7px; }
+				.content-container { max-width: 100% }
 			}
 		</style>
 	</head>
@@ -60,7 +74,7 @@
 			<div class="icon-section">
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-food-burger"></span>
+					<span class="icon hf hf-4x hf-food-burger"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-burger</div>
 						<div><strong>html:</strong> &amp;#33;</div>
@@ -69,7 +83,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-food-water-bottle"></span>
+					<span class="icon hf hf-4x hf-food-water-bottle"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-water-bottle</div>
 						<div><strong>html:</strong> &amp;#34;</div>
@@ -78,7 +92,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-food-hand-beer"></span>
+					<span class="icon hf hf-4x hf-food-hand-beer"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-hand-beer</div>
 						<div><strong>html:</strong> &amp;#35;</div>
@@ -87,7 +101,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-food-barbeque"></span>
+					<span class="icon hf hf-4x hf-food-barbeque"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-barbeque</div>
 						<div><strong>html:</strong> &amp;#36;</div>
@@ -96,7 +110,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-food-beer"></span>
+					<span class="icon hf hf-4x hf-food-beer"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-beer</div>
 						<div><strong>html:</strong> &amp;#37;</div>
@@ -105,7 +119,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-food-icecream"></span>
+					<span class="icon hf hf-4x hf-food-icecream"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-icecream</div>
 						<div><strong>html:</strong> &amp;#38;</div>
@@ -114,7 +128,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-food-pizza"></span>
+					<span class="icon hf hf-4x hf-food-pizza"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-pizza</div>
 						<div><strong>html:</strong> &amp;#39;</div>
@@ -123,7 +137,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-person-man"></span>
+					<span class="icon hf hf-4x hf-person-man"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-man</div>
 						<div><strong>html:</strong> &amp;#49;</div>
@@ -132,7 +146,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-person-man-2"></span>
+					<span class="icon hf hf-4x hf-person-man-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-man-2</div>
 						<div><strong>html:</strong> &amp;#50;</div>
@@ -141,7 +155,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-person-man-3"></span>
+					<span class="icon hf hf-4x hf-person-man-3"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-man-3</div>
 						<div><strong>html:</strong> &amp;#51;</div>
@@ -150,7 +164,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-person-man-4"></span>
+					<span class="icon hf hf-4x hf-person-man-4"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-man-4</div>
 						<div><strong>html:</strong> &amp;#52;</div>
@@ -159,7 +173,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-person-woman"></span>
+					<span class="icon hf hf-4x hf-person-woman"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-woman</div>
 						<div><strong>html:</strong> &amp;#53;</div>
@@ -168,7 +182,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-person-woman-2"></span>
+					<span class="icon hf hf-4x hf-person-woman-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-woman-2</div>
 						<div><strong>html:</strong> &amp;#54;</div>
@@ -177,7 +191,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-person-woman-3"></span>
+					<span class="icon hf hf-4x hf-person-woman-3"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-woman-3</div>
 						<div><strong>html:</strong> &amp;#55;</div>
@@ -186,7 +200,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-person-woman-4"></span>
+					<span class="icon hf hf-4x hf-person-woman-4"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-woman-4</div>
 						<div><strong>html:</strong> &amp;#56;</div>
@@ -195,7 +209,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-logo-hallifornia"></span>
+					<span class="icon hf hf-4x hf-logo-hallifornia"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> logo-hallifornia</div>
 						<div><strong>html:</strong> &amp;#65;</div>
@@ -204,7 +218,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-logo-nordic-surfers"></span>
+					<span class="icon hf hf-4x hf-logo-nordic-surfers"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> logo-nordic-surfers</div>
 						<div><strong>html:</strong> &amp;#66;</div>
@@ -213,7 +227,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-4x4"></span>
+					<span class="icon hf hf-4x hf-activity-4x4"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-4x4</div>
 						<div><strong>html:</strong> &amp;#91;</div>
@@ -222,7 +236,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-row"></span>
+					<span class="icon hf hf-4x hf-activity-row"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-row</div>
 						<div><strong>html:</strong> &amp;#92;</div>
@@ -231,7 +245,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-swim"></span>
+					<span class="icon hf hf-4x hf-activity-swim"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-swim</div>
 						<div><strong>html:</strong> &amp;#93;</div>
@@ -240,7 +254,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-water-scooter"></span>
+					<span class="icon hf hf-4x hf-activity-water-scooter"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-water-scooter</div>
 						<div><strong>html:</strong> &amp;#94;</div>
@@ -249,7 +263,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-wake-board"></span>
+					<span class="icon hf hf-4x hf-activity-wake-board"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-wake-board</div>
 						<div><strong>html:</strong> &amp;#95;</div>
@@ -258,7 +272,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-wake-board-2"></span>
+					<span class="icon hf hf-4x hf-activity-wake-board-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-wake-board-2</div>
 						<div><strong>html:</strong> &amp;#96;</div>
@@ -267,7 +281,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-surf"></span>
+					<span class="icon hf hf-4x hf-activity-surf"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-surf</div>
 						<div><strong>html:</strong> &amp;#97;</div>
@@ -276,7 +290,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-kite-surf"></span>
+					<span class="icon hf hf-4x hf-activity-kite-surf"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-kite-surf</div>
 						<div><strong>html:</strong> &amp;#98;</div>
@@ -285,7 +299,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-wind-surf"></span>
+					<span class="icon hf hf-4x hf-activity-wind-surf"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-wind-surf</div>
 						<div><strong>html:</strong> &amp;#99;</div>
@@ -294,7 +308,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-roller-blades"></span>
+					<span class="icon hf hf-4x hf-activity-roller-blades"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-roller-blades</div>
 						<div><strong>html:</strong> &amp;#101;</div>
@@ -303,7 +317,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-dive"></span>
+					<span class="icon hf hf-4x hf-activity-dive"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-dive</div>
 						<div><strong>html:</strong> &amp;#102;</div>
@@ -312,7 +326,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-surf-walk"></span>
+					<span class="icon hf hf-4x hf-activity-surf-walk"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-surf-walk</div>
 						<div><strong>html:</strong> &amp;#103;</div>
@@ -321,7 +335,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-surf-walk-2"></span>
+					<span class="icon hf hf-4x hf-activity-surf-walk-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-surf-walk-2</div>
 						<div><strong>html:</strong> &amp;#104;</div>
@@ -330,7 +344,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-skate"></span>
+					<span class="icon hf hf-4x hf-activity-skate"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-skate</div>
 						<div><strong>html:</strong> &amp;#105;</div>
@@ -339,7 +353,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-swing"></span>
+					<span class="icon hf hf-4x hf-activity-swing"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-swing</div>
 						<div><strong>html:</strong> &amp;#106;</div>
@@ -348,7 +362,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-yoga"></span>
+					<span class="icon hf hf-4x hf-activity-yoga"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-yoga</div>
 						<div><strong>html:</strong> &amp;#107;</div>
@@ -357,7 +371,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-dance"></span>
+					<span class="icon hf hf-4x hf-activity-dance"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-dance</div>
 						<div><strong>html:</strong> &amp;#108;</div>
@@ -366,7 +380,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-longboard"></span>
+					<span class="icon hf hf-4x hf-activity-longboard"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-longboard</div>
 						<div><strong>html:</strong> &amp;#109;</div>
@@ -375,7 +389,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-sup"></span>
+					<span class="icon hf hf-4x hf-activity-sup"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-sup</div>
 						<div><strong>html:</strong> &amp;#110;</div>
@@ -384,7 +398,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-climbing"></span>
+					<span class="icon hf hf-4x hf-activity-climbing"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-climbing</div>
 						<div><strong>html:</strong> &amp;#111;</div>
@@ -393,7 +407,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-sup-yoga"></span>
+					<span class="icon hf hf-4x hf-activity-sup-yoga"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-sup-yoga</div>
 						<div><strong>html:</strong> &amp;#112;</div>
@@ -402,7 +416,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-wind-cart"></span>
+					<span class="icon hf hf-4x hf-activity-wind-cart"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-wind-cart</div>
 						<div><strong>html:</strong> &amp;#113;</div>
@@ -411,7 +425,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-kick-bike"></span>
+					<span class="icon hf hf-4x hf-activity-kick-bike"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-kick-bike</div>
 						<div><strong>html:</strong> &amp;#114;</div>
@@ -420,7 +434,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-activity-play"></span>
+					<span class="icon hf hf-4x hf-activity-play"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-play</div>
 						<div><strong>html:</strong> &amp;#115;</div>
@@ -429,7 +443,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-festival-tent-2"></span>
+					<span class="icon hf hf-4x hf-festival-tent-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-tent-2</div>
 						<div><strong>html:</strong> &amp;#116;</div>
@@ -438,7 +452,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-festival-accommodation"></span>
+					<span class="icon hf hf-4x hf-festival-accommodation"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-accommodation</div>
 						<div><strong>html:</strong> &amp;#118;</div>
@@ -447,7 +461,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-festival-dj"></span>
+					<span class="icon hf hf-4x hf-festival-dj"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-dj</div>
 						<div><strong>html:</strong> &amp;#120;</div>
@@ -456,7 +470,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-festival-dj-2"></span>
+					<span class="icon hf hf-4x hf-festival-dj-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-dj-2</div>
 						<div><strong>html:</strong> &amp;#121;</div>
@@ -465,7 +479,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-festival-spotlight"></span>
+					<span class="icon hf hf-4x hf-festival-spotlight"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-spotlight</div>
 						<div><strong>html:</strong> &amp;#122;</div>
@@ -474,7 +488,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-festival-head-phone"></span>
+					<span class="icon hf hf-4x hf-festival-head-phone"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-head-phone</div>
 						<div><strong>html:</strong> &amp;#123;</div>
@@ -483,7 +497,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-festival-speaker"></span>
+					<span class="icon hf hf-4x hf-festival-speaker"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-speaker</div>
 						<div><strong>html:</strong> &amp;#124;</div>
@@ -492,7 +506,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-festival-ticket"></span>
+					<span class="icon hf hf-4x hf-festival-ticket"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-ticket</div>
 						<div><strong>html:</strong> &amp;#125;</div>
@@ -501,7 +515,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-festival-vip"></span>
+					<span class="icon hf hf-4x hf-festival-vip"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-vip</div>
 						<div><strong>html:</strong> &amp;#126;</div>
@@ -510,7 +524,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-festival-toilet"></span>
+					<span class="icon hf hf-4x hf-festival-toilet"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-toilet</div>
 						<div><strong>html:</strong> &amp;#161;</div>
@@ -519,7 +533,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-festival-castle"></span>
+					<span class="icon hf hf-4x hf-festival-castle"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-castle</div>
 						<div><strong>html:</strong> &amp;#163;</div>
@@ -528,7 +542,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-festival-caste-2"></span>
+					<span class="icon hf hf-4x hf-festival-caste-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-caste-2</div>
 						<div><strong>html:</strong> &amp;#164;</div>
@@ -537,7 +551,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-festival-tent"></span>
+					<span class="icon hf hf-4x hf-festival-tent"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-tent</div>
 						<div><strong>html:</strong> &amp;#165;</div>
@@ -546,7 +560,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-contact-email"></span>
+					<span class="icon hf hf-4x hf-contact-email"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> contact-email</div>
 						<div><strong>html:</strong> &amp;#196;</div>
@@ -555,7 +569,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-contact-heart"></span>
+					<span class="icon hf hf-4x hf-contact-heart"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> contact-heart</div>
 						<div><strong>html:</strong> &amp;#197;</div>
@@ -564,7 +578,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-contact-phone"></span>
+					<span class="icon hf hf-4x hf-contact-phone"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> contact-phone</div>
 						<div><strong>html:</strong> &amp;#214;</div>
@@ -573,7 +587,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-contact-twitter"></span>
+					<span class="icon hf hf-4x hf-contact-twitter"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> contact-twitter</div>
 						<div><strong>html:</strong> &amp;#228;</div>
@@ -582,7 +596,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-contact-facebook"></span>
+					<span class="icon hf hf-4x hf-contact-facebook"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> contact-facebook</div>
 						<div><strong>html:</strong> &amp;#229;</div>
@@ -591,7 +605,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-contact-instagram"></span>
+					<span class="icon hf hf-4x hf-contact-instagram"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> contact-instagram</div>
 						<div><strong>html:</strong> &amp;#246;</div>
@@ -600,7 +614,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-equipment-helmet"></span>
+					<span class="icon hf hf-4x hf-equipment-helmet"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> equipment-helmet</div>
 						<div><strong>html:</strong> &amp;#256;</div>
@@ -609,7 +623,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-equipment-helmet-2"></span>
+					<span class="icon hf hf-4x hf-equipment-helmet-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> equipment-helmet-2</div>
 						<div><strong>html:</strong> &amp;#257;</div>
@@ -618,7 +632,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-equipment-flip-flop"></span>
+					<span class="icon hf hf-4x hf-equipment-flip-flop"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> equipment-flip-flop</div>
 						<div><strong>html:</strong> &amp;#259;</div>
@@ -627,7 +641,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-payment-credit-card"></span>
+					<span class="icon hf hf-4x hf-payment-credit-card"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> payment-credit-card</div>
 						<div><strong>html:</strong> &amp;#288;</div>
@@ -636,7 +650,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-payment-swish"></span>
+					<span class="icon hf hf-4x hf-payment-swish"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> payment-swish</div>
 						<div><strong>html:</strong> &amp;#289;</div>
@@ -645,7 +659,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-payment-wallet"></span>
+					<span class="icon hf hf-4x hf-payment-wallet"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> payment-wallet</div>
 						<div><strong>html:</strong> &amp;#290;</div>
@@ -654,7 +668,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-payment-money"></span>
+					<span class="icon hf hf-4x hf-payment-money"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> payment-money</div>
 						<div><strong>html:</strong> &amp;#291;</div>
@@ -663,7 +677,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-sign-hit"></span>
+					<span class="icon hf hf-4x hf-sign-hit"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> sign-hit</div>
 						<div><strong>html:</strong> &amp;#352;</div>
@@ -672,7 +686,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-sign-stop"></span>
+					<span class="icon hf hf-4x hf-sign-stop"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> sign-stop</div>
 						<div><strong>html:</strong> &amp;#353;</div>
@@ -681,7 +695,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-sign-point"></span>
+					<span class="icon hf hf-4x hf-sign-point"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> sign-point</div>
 						<div><strong>html:</strong> &amp;#354;</div>
@@ -690,7 +704,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-sign-fight"></span>
+					<span class="icon hf hf-4x hf-sign-fight"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> sign-fight</div>
 						<div><strong>html:</strong> &amp;#355;</div>
@@ -699,7 +713,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-sign-agree"></span>
+					<span class="icon hf hf-4x hf-sign-agree"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> sign-agree</div>
 						<div><strong>html:</strong> &amp;#356;</div>
@@ -708,7 +722,7 @@
 				</div>
 			
 				<div class="icon-item">
-					<span class="hf hf-4x hf-sign-press"></span>
+					<span class="icon hf hf-4x hf-sign-press"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> sign-press</div>
 						<div><strong>html:</strong> &amp;#357;</div>
