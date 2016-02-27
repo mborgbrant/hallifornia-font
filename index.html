@@ -29,7 +29,7 @@
 			a { text-decoration: none; color: #e0e0e0; }
 			a:hover { border-bottom: 2px solid #ef7521; }
 			small { font-size: 70%; }
-			.content-container { text-align: center; max-width: 90%; margin: 0 auto; background: #eee; padding-top: 40px; }
+			.content-container { text-align: center; max-width: 90%; margin: 0 auto; background: #eee; padding-top: 40px; overflow-x: hidden; }
 			.page-section { z-index: 9999999; position: fixed; background: rgba(51, 61, 71, 0.94); top: 0; left: 0; width: 100%; box-shadow: 0px 7px 20px 0px rgba(20,20,20,0.75); margin-bottom: 20px; }
 			.icon-section { margin-top: 230px; margin-left: 8px; }
 			.icon-item { display: inline-block; width: 150px; text-align: center; background: #dcdcdc; margin: 0 8px 12px 0px; padding: 8px; border-radius: 20px; border: solid 2px #e0e0e0; transition: 0.3s all ease-in-out; }
@@ -52,13 +52,18 @@
 
 			@media (max-width: 480px) {
 				.icon-item {
-					width: 75px;
+					width: 90px;
 				}
 				.icon {
 					font-size: 2em;
 				}
-				.icon-caption { font-size: 7px; }
+				.icon-caption { font-size: 8px; }
 				.content-container { max-width: 100% }
+				p {
+					padding-top: 8px;
+					padding-bottom: 8px;
+				}
+				.icon-section { margin-top: 200px; }
 			}
 		</style>
 	</head>
@@ -73,7 +78,7 @@
 			</div>
 			<div class="icon-section">
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-food-burger"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-burger</div>
@@ -82,7 +87,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-food-water-bottle"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-water-bottle</div>
@@ -91,7 +96,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-food-hand-beer"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-hand-beer</div>
@@ -100,7 +105,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-food-barbeque"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-barbeque</div>
@@ -109,7 +114,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-food-beer"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-beer</div>
@@ -118,7 +123,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-food-icecream"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-icecream</div>
@@ -127,7 +132,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-food-pizza"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> food-pizza</div>
@@ -136,7 +141,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-person-man"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-man</div>
@@ -145,7 +150,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-person-man-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-man-2</div>
@@ -154,7 +159,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-person-man-3"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-man-3</div>
@@ -163,7 +168,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-person-man-4"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-man-4</div>
@@ -172,7 +177,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-person-woman"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-woman</div>
@@ -181,7 +186,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-person-woman-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-woman-2</div>
@@ -190,7 +195,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-person-woman-3"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-woman-3</div>
@@ -199,7 +204,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-person-woman-4"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> person-woman-4</div>
@@ -208,7 +213,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-logo-hallifornia"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> logo-hallifornia</div>
@@ -217,7 +222,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-logo-nordic-surfers"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> logo-nordic-surfers</div>
@@ -226,7 +231,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-4x4"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-4x4</div>
@@ -235,7 +240,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-row"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-row</div>
@@ -244,7 +249,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-swim"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-swim</div>
@@ -253,7 +258,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-water-scooter"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-water-scooter</div>
@@ -262,7 +267,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-wake-board"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-wake-board</div>
@@ -271,7 +276,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-wake-board-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-wake-board-2</div>
@@ -280,7 +285,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-surf"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-surf</div>
@@ -289,7 +294,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-kite-surf"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-kite-surf</div>
@@ -298,7 +303,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-wind-surf"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-wind-surf</div>
@@ -307,7 +312,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-roller-blades"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-roller-blades</div>
@@ -316,7 +321,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-dive"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-dive</div>
@@ -325,7 +330,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-surf-walk"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-surf-walk</div>
@@ -334,7 +339,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-surf-walk-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-surf-walk-2</div>
@@ -343,7 +348,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-skate"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-skate</div>
@@ -352,7 +357,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-swing"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-swing</div>
@@ -361,7 +366,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-yoga"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-yoga</div>
@@ -370,7 +375,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-dance"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-dance</div>
@@ -379,7 +384,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-longboard"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-longboard</div>
@@ -388,7 +393,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-sup"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-sup</div>
@@ -397,7 +402,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-climbing"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-climbing</div>
@@ -406,7 +411,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-sup-yoga"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-sup-yoga</div>
@@ -415,7 +420,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-wind-cart"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-wind-cart</div>
@@ -424,7 +429,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-kick-bike"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-kick-bike</div>
@@ -433,7 +438,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-activity-play"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> activity-play</div>
@@ -442,7 +447,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-festival-tent-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-tent-2</div>
@@ -451,7 +456,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-festival-accommodation"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-accommodation</div>
@@ -460,7 +465,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-festival-dj"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-dj</div>
@@ -469,7 +474,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-festival-dj-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-dj-2</div>
@@ -478,7 +483,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-festival-spotlight"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-spotlight</div>
@@ -487,7 +492,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-festival-head-phone"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-head-phone</div>
@@ -496,7 +501,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-festival-speaker"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-speaker</div>
@@ -505,7 +510,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-festival-ticket"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-ticket</div>
@@ -514,7 +519,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-festival-vip"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-vip</div>
@@ -523,7 +528,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-festival-toilet"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-toilet</div>
@@ -532,7 +537,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-festival-castle"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-castle</div>
@@ -541,7 +546,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-festival-caste-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-caste-2</div>
@@ -550,7 +555,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-festival-tent"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> festival-tent</div>
@@ -559,7 +564,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-contact-email"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> contact-email</div>
@@ -568,7 +573,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-contact-heart"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> contact-heart</div>
@@ -577,7 +582,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-contact-phone"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> contact-phone</div>
@@ -586,7 +591,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-contact-twitter"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> contact-twitter</div>
@@ -595,7 +600,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-contact-facebook"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> contact-facebook</div>
@@ -604,7 +609,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-contact-instagram"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> contact-instagram</div>
@@ -613,7 +618,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-equipment-helmet"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> equipment-helmet</div>
@@ -622,7 +627,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-equipment-helmet-2"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> equipment-helmet-2</div>
@@ -631,7 +636,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-equipment-flip-flop"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> equipment-flip-flop</div>
@@ -640,7 +645,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-payment-credit-card"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> payment-credit-card</div>
@@ -649,7 +654,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-payment-swish"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> payment-swish</div>
@@ -658,7 +663,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-payment-wallet"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> payment-wallet</div>
@@ -667,7 +672,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-payment-money"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> payment-money</div>
@@ -676,7 +681,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-sign-hit"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> sign-hit</div>
@@ -685,7 +690,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-sign-stop"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> sign-stop</div>
@@ -694,7 +699,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-sign-point"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> sign-point</div>
@@ -703,7 +708,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-sign-fight"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> sign-fight</div>
@@ -712,7 +717,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-sign-agree"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> sign-agree</div>
@@ -721,7 +726,7 @@
 					</div>
 				</div>
 			
-				<div class="icon-item">
+				<div class="icon-item" onclick="">
 					<span class="icon hf hf-4x hf-sign-press"></span>
 					<div class="icon-caption">
 						<div><strong>css:</strong> sign-press</div>
