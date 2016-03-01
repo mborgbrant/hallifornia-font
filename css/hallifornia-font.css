@@ -100,6 +100,7 @@ text-align: center;
 .hf-festival-calendar-23:before { content: "\B0" }
 .hf-festival-time:before { content: "\B1" }
 .hf-festival-anchor:before { content: "\B2" }
+.hf-festival-medicine:before { content: "\B3" }
 .hf-person-man:before { content: "\E0" }
 .hf-person-man-2:before { content: "\E1" }
 .hf-person-man-3:before { content: "\E2" }
@@ -138,13 +139,15 @@ text-align: center;
 .hf-www-tumblr:before { content: "\158" }
 .hf-www-star-o:before { content: "\159" }
 .hf-www-star:before { content: "\160" }
-.hf-sign-stop:before { content: "\161" }
-.hf-sign-point:before { content: "\162" }
+.hf-www-no-image:before { content: "\161" }
+.hf-www-500px:before { content: "\162" }
 .hf-sign-fight:before { content: "\163" }
 .hf-sign-agree:before { content: "\164" }
 .hf-sign-press:before { content: "\165" }
 .hf-sign-crossed:before { content: "\166" }
 .hf-sign-hit:before { content: "\167" }
+.hf-sign-stop:before { content: "\168" }
+.hf-sign-point:before { content: "\169" }
 .hf-misc-cross:before { content: "\180" }
 .hf-misc-x:before { content: "\181" }
 .hf-misc-peace:before { content: "\182" }
@@ -152,3 +155,6 @@ text-align: center;
 .hf-misc-flower:before { content: "\184" }
 .hf-misc-chair:before { content: "\185" }
 .hf-misc-map-point:before { content: "\186" }
+.hf-misc-certificate:before { content: "\187" }
+.hf-misc-certificate-o:before { content: "\188" }
+.hf-misc-ac:before { content: "\189" }
