@@ -10,7 +10,7 @@ const gulp = require('gulp');
 const fs = require('fs');
 
 const fontName = 'hallifornia-font';
-const version = '0_4b';
+const version = '0_3b';
 const customDomain = 'www.hallifornia-font.com';
 const runTimestamp = Math.round(Date.now() / 1000);
 

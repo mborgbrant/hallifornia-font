@@ -1,0 +1,1327 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Hallifornia Font, a free symbol font</title>
+
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="description" content="A free symbol font to use stand alone or together with the included css" />
+		<meta name="author" content="Mikael Borgbrant">
+
+		<link rel="canonical" href="http://www.hallifornia-font.com">
+		<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+		<link rel="manifest" href="favicons/manifest.json">
+
+		<link href="css/hallifornia-font.min.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+		<style>
+			body { padding: 0; margin: 0; background: #cecece; font-family: 'Oswald', sans-serif, verdana; }
+			h1, h2 { letter-spacing: 1px; margin: 0; padding: 0; font-family: 'Oswald', sans-serif, verdana; padding-bottom: 4px; border-bottom: 1px solid #333d47; color: #333d47;  }
+			h4 { clear:both; letter-spacing: 1px; color: #333d47; margin-bottom: 10px; }
+			.icon-section h2 { text-align: left; margin: 0 30px 30px 22px; }
+			p { margin: 0; padding-top: 15px; padding-bottom: 15px; }
+			a { text-decoration: none; color: #e0e0e0; letter-spacing: 1px; }
+			a:hover { border-bottom: 2px solid #ef7521; }
+			small { font-size: 70%; }
+			.content-container { text-align: center; max-width: 90%; margin: 0 auto; background: #eee; padding-top: 40px; overflow-x: hidden; }
+			.page-section { z-index: 9999999; position: fixed; background: rgba(51, 61, 71, 0.94); top: 0; left: 0; width: 100%; box-shadow: 0px 7px 20px 0px rgba(20,20,20,0.75); margin-bottom: 20px; padding-top: 20px; }
+			.icon-section { margin: 230px 0 50px 8px; }
+			.section { margin: 0 0 50px 8px; text-align:left; margin: 0 30px 30px 22px;}
+			.icon-item { display: inline-block; min-height: 150px; width: 150px; text-align: center; background: #dcdcdc; margin: 0 8px 12px 0px; padding: 8px; border-radius: 20px; border: solid 2px #e0e0e0; transition: 0.3s all ease-in-out; }
+			.hf { color: #ef7521; }
+			.icon-caption { font-size: 12px; padding: 6px 4px 6px 6px; }
+			.primary-color { color: #e0e0e0; }
+			.icon-item:hover { webkit-transform:scale(1.25) rotate(360deg); -moz-transform:scale(1.25) rotate(360deg); -ms-transform:scale(1.25) rotate(360deg); -o-transform:scale(1.25) rotate(360deg); transform:scale(1.25) rotate(-5deg); border-radius: 50%; border: solid 2px #ef7521; position: relative; top: 0; left: 0; z-index: 999999; background-color: #333d47; color: #f0f0f0; }
+			.icon { font-size: 4em; margin-top: 12px; }
+			.margin-top-30 { margin-top: 30px; }
+			@media (max-width: 480px) {
+				.icon-item { width: 110px; min-height: 110px; }
+				.icon { font-size: 2em; }
+				.icon-caption { font-size: 10px; }
+				.content-container { max-width: 100%; }
+				p { padding-top: 8px; padding-bottom: 8px; }
+				.icon-section { margin-top: 200px; }
+			}
+			@media (max-height: 480px) {
+				.page-section { position: static; }
+				.content-container { padding-top: 0px; max-width: 100%; }
+				.icon-section { margin-top: 20px; }
+			}
+			.demo-icon {
+				float: left;
+				margin-right: 20px;
+			}
+			.demo-text {
+				float: left;
+				height: 3rem;
+				line-height: 3rem;
+			}
+			.clear-both {
+				clear: both;
+			}
+			.demo-item {
+				margin: 0 8px 0 8px;
+				width: calc(100% - 16px);
+			}
+			.demo-item code {
+				line-height: 24px;
+				white-space: nowrap;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="content-container">
+			<div class="page-section">
+			<a href="https://github.com/mborgbrant/hallifornia-font"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+			<p>
+				<i class="hf hf-5x hf-logo-hallifornia"></i>
+				<h3><a href="download/hallifornia_font_0_4b.zip">Download Hallifornia Font <small>v0.4b</small></a></h3>
+			</p>
+			</div>
+
+			<div class="icon-section">
+				<h2>Icons</h2>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-logo-hallifornia"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> logo-hallifornia</div>
+						<div><strong>html:</strong> &amp;#33;</div>
+						<div><strong>character:</strong> &#33;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-logo-nordic-surfers"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> logo-nordic-surfers</div>
+						<div><strong>html:</strong> &amp;#34;</div>
+						<div><strong>character:</strong> &#34;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-food-burger"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> food-burger</div>
+						<div><strong>html:</strong> &amp;#48;</div>
+						<div><strong>character:</strong> &#48;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-food-pizza"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> food-pizza</div>
+						<div><strong>html:</strong> &amp;#49;</div>
+						<div><strong>character:</strong> &#49;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-food-icecream"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> food-icecream</div>
+						<div><strong>html:</strong> &amp;#50;</div>
+						<div><strong>character:</strong> &#50;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-food-beer"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> food-beer</div>
+						<div><strong>html:</strong> &amp;#51;</div>
+						<div><strong>character:</strong> &#51;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-food-barbeque"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> food-barbeque</div>
+						<div><strong>html:</strong> &amp;#52;</div>
+						<div><strong>character:</strong> &#52;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-food-hand-beer"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> food-hand-beer</div>
+						<div><strong>html:</strong> &amp;#53;</div>
+						<div><strong>character:</strong> &#53;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-food-water-bottle"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> food-water-bottle</div>
+						<div><strong>html:</strong> &amp;#54;</div>
+						<div><strong>character:</strong> &#54;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-food-coffee"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> food-coffee</div>
+						<div><strong>html:</strong> &amp;#55;</div>
+						<div><strong>character:</strong> &#55;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-food-coffee-2"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> food-coffee-2</div>
+						<div><strong>html:</strong> &amp;#56;</div>
+						<div><strong>character:</strong> &#56;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-food-wine"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> food-wine</div>
+						<div><strong>html:</strong> &amp;#57;</div>
+						<div><strong>character:</strong> &#57;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-surf"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-surf</div>
+						<div><strong>html:</strong> &amp;#65;</div>
+						<div><strong>character:</strong> &#65;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-surf-2"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-surf-2</div>
+						<div><strong>html:</strong> &amp;#66;</div>
+						<div><strong>character:</strong> &#66;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-kite-surf"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-kite-surf</div>
+						<div><strong>html:</strong> &amp;#68;</div>
+						<div><strong>character:</strong> &#68;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-wind-surf"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-wind-surf</div>
+						<div><strong>html:</strong> &amp;#69;</div>
+						<div><strong>character:</strong> &#69;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-roller-blades"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-roller-blades</div>
+						<div><strong>html:</strong> &amp;#70;</div>
+						<div><strong>character:</strong> &#70;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-dive"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-dive</div>
+						<div><strong>html:</strong> &amp;#71;</div>
+						<div><strong>character:</strong> &#71;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-surf-walk"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-surf-walk</div>
+						<div><strong>html:</strong> &amp;#72;</div>
+						<div><strong>character:</strong> &#72;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-surf-walk-2"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-surf-walk-2</div>
+						<div><strong>html:</strong> &amp;#73;</div>
+						<div><strong>character:</strong> &#73;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-skate"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-skate</div>
+						<div><strong>html:</strong> &amp;#74;</div>
+						<div><strong>character:</strong> &#74;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-sup-yoga"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-sup-yoga</div>
+						<div><strong>html:</strong> &amp;#75;</div>
+						<div><strong>character:</strong> &#75;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-wind-cart"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-wind-cart</div>
+						<div><strong>html:</strong> &amp;#76;</div>
+						<div><strong>character:</strong> &#76;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-kick-bike"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-kick-bike</div>
+						<div><strong>html:</strong> &amp;#77;</div>
+						<div><strong>character:</strong> &#77;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-play"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-play</div>
+						<div><strong>html:</strong> &amp;#78;</div>
+						<div><strong>character:</strong> &#78;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-victory"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-victory</div>
+						<div><strong>html:</strong> &amp;#79;</div>
+						<div><strong>character:</strong> &#79;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-4x4"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-4x4</div>
+						<div><strong>html:</strong> &amp;#80;</div>
+						<div><strong>character:</strong> &#80;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-row"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-row</div>
+						<div><strong>html:</strong> &amp;#81;</div>
+						<div><strong>character:</strong> &#81;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-swim"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-swim</div>
+						<div><strong>html:</strong> &amp;#82;</div>
+						<div><strong>character:</strong> &#82;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-water-scooter"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-water-scooter</div>
+						<div><strong>html:</strong> &amp;#83;</div>
+						<div><strong>character:</strong> &#83;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-wake-board"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-wake-board</div>
+						<div><strong>html:</strong> &amp;#84;</div>
+						<div><strong>character:</strong> &#84;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-wake-board-2"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-wake-board-2</div>
+						<div><strong>html:</strong> &amp;#85;</div>
+						<div><strong>character:</strong> &#85;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-swing"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-swing</div>
+						<div><strong>html:</strong> &amp;#86;</div>
+						<div><strong>character:</strong> &#86;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-dance"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-dance</div>
+						<div><strong>html:</strong> &amp;#87;</div>
+						<div><strong>character:</strong> &#87;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-longboard"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-longboard</div>
+						<div><strong>html:</strong> &amp;#88;</div>
+						<div><strong>character:</strong> &#88;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-sup"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-sup</div>
+						<div><strong>html:</strong> &amp;#89;</div>
+						<div><strong>character:</strong> &#89;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-climbing"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-climbing</div>
+						<div><strong>html:</strong> &amp;#90;</div>
+						<div><strong>character:</strong> &#90;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-indo-board"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-indo-board</div>
+						<div><strong>html:</strong> &amp;#91;</div>
+						<div><strong>character:</strong> &#91;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-rafting"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-rafting</div>
+						<div><strong>html:</strong> &amp;#92;</div>
+						<div><strong>character:</strong> &#92;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-slack-line"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-slack-line</div>
+						<div><strong>html:</strong> &amp;#93;</div>
+						<div><strong>character:</strong> &#93;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-activity-yoga"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> activity-yoga</div>
+						<div><strong>html:</strong> &amp;#94;</div>
+						<div><strong>character:</strong> &#94;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-accommodation"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-accommodation</div>
+						<div><strong>html:</strong> &amp;#118;</div>
+						<div><strong>character:</strong> &#118;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-dj"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-dj</div>
+						<div><strong>html:</strong> &amp;#120;</div>
+						<div><strong>character:</strong> &#120;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-dj-2"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-dj-2</div>
+						<div><strong>html:</strong> &amp;#121;</div>
+						<div><strong>character:</strong> &#121;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-spotlight"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-spotlight</div>
+						<div><strong>html:</strong> &amp;#122;</div>
+						<div><strong>character:</strong> &#122;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-head-phone"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-head-phone</div>
+						<div><strong>html:</strong> &amp;#123;</div>
+						<div><strong>character:</strong> &#123;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-speaker"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-speaker</div>
+						<div><strong>html:</strong> &amp;#124;</div>
+						<div><strong>character:</strong> &#124;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-ticket"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-ticket</div>
+						<div><strong>html:</strong> &amp;#125;</div>
+						<div><strong>character:</strong> &#125;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-vip"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-vip</div>
+						<div><strong>html:</strong> &amp;#126;</div>
+						<div><strong>character:</strong> &#126;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-toilet"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-toilet</div>
+						<div><strong>html:</strong> &amp;#161;</div>
+						<div><strong>character:</strong> &#161;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-castle"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-castle</div>
+						<div><strong>html:</strong> &amp;#163;</div>
+						<div><strong>character:</strong> &#163;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-caste-2"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-caste-2</div>
+						<div><strong>html:</strong> &amp;#164;</div>
+						<div><strong>character:</strong> &#164;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-tent"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-tent</div>
+						<div><strong>html:</strong> &amp;#165;</div>
+						<div><strong>character:</strong> &#165;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-tent-2"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-tent-2</div>
+						<div><strong>html:</strong> &amp;#166;</div>
+						<div><strong>character:</strong> &#166;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-handicap"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-handicap</div>
+						<div><strong>html:</strong> &amp;#167;</div>
+						<div><strong>character:</strong> &#167;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-bracelet"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-bracelet</div>
+						<div><strong>html:</strong> &amp;#168;</div>
+						<div><strong>character:</strong> &#168;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-wifi"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-wifi</div>
+						<div><strong>html:</strong> &amp;#169;</div>
+						<div><strong>character:</strong> &#169;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-king"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-king</div>
+						<div><strong>html:</strong> &amp;#170;</div>
+						<div><strong>character:</strong> &#170;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-queen"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-queen</div>
+						<div><strong>html:</strong> &amp;#171;</div>
+						<div><strong>character:</strong> &#171;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-calendar"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-calendar</div>
+						<div><strong>html:</strong> &amp;#172;</div>
+						<div><strong>character:</strong> &#172;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-calendar-21"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-calendar-21</div>
+						<div><strong>html:</strong> &amp;#174;</div>
+						<div><strong>character:</strong> &#174;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-calendar-22"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-calendar-22</div>
+						<div><strong>html:</strong> &amp;#175;</div>
+						<div><strong>character:</strong> &#175;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-calendar-23"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-calendar-23</div>
+						<div><strong>html:</strong> &amp;#176;</div>
+						<div><strong>character:</strong> &#176;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-time"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-time</div>
+						<div><strong>html:</strong> &amp;#177;</div>
+						<div><strong>character:</strong> &#177;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-anchor"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-anchor</div>
+						<div><strong>html:</strong> &amp;#178;</div>
+						<div><strong>character:</strong> &#178;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-festival-medicine"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> festival-medicine</div>
+						<div><strong>html:</strong> &amp;#179;</div>
+						<div><strong>character:</strong> &#179;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-person-man"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> person-man</div>
+						<div><strong>html:</strong> &amp;#224;</div>
+						<div><strong>character:</strong> &#224;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-person-man-2"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> person-man-2</div>
+						<div><strong>html:</strong> &amp;#225;</div>
+						<div><strong>character:</strong> &#225;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-person-man-3"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> person-man-3</div>
+						<div><strong>html:</strong> &amp;#226;</div>
+						<div><strong>character:</strong> &#226;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-person-man-4"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> person-man-4</div>
+						<div><strong>html:</strong> &amp;#228;</div>
+						<div><strong>character:</strong> &#228;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-person-man-5"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> person-man-5</div>
+						<div><strong>html:</strong> &amp;#229;</div>
+						<div><strong>character:</strong> &#229;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-person-woman"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> person-woman</div>
+						<div><strong>html:</strong> &amp;#233;</div>
+						<div><strong>character:</strong> &#233;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-person-woman-2"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> person-woman-2</div>
+						<div><strong>html:</strong> &amp;#234;</div>
+						<div><strong>character:</strong> &#234;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-person-woman-3"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> person-woman-3</div>
+						<div><strong>html:</strong> &amp;#235;</div>
+						<div><strong>character:</strong> &#235;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-person-woman-4"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> person-woman-4</div>
+						<div><strong>html:</strong> &amp;#236;</div>
+						<div><strong>character:</strong> &#236;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-equipment-helmet"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> equipment-helmet</div>
+						<div><strong>html:</strong> &amp;#256;</div>
+						<div><strong>character:</strong> &#256;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-equipment-helmet-2"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> equipment-helmet-2</div>
+						<div><strong>html:</strong> &amp;#257;</div>
+						<div><strong>character:</strong> &#257;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-equipment-flip-flop"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> equipment-flip-flop</div>
+						<div><strong>html:</strong> &amp;#259;</div>
+						<div><strong>character:</strong> &#259;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-payment-credit-card"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> payment-credit-card</div>
+						<div><strong>html:</strong> &amp;#288;</div>
+						<div><strong>character:</strong> &#288;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-payment-swish"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> payment-swish</div>
+						<div><strong>html:</strong> &amp;#289;</div>
+						<div><strong>character:</strong> &#289;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-payment-wallet"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> payment-wallet</div>
+						<div><strong>html:</strong> &amp;#290;</div>
+						<div><strong>character:</strong> &#290;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-payment-money"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> payment-money</div>
+						<div><strong>html:</strong> &amp;#291;</div>
+						<div><strong>character:</strong> &#291;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-payment-coins"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> payment-coins</div>
+						<div><strong>html:</strong> &amp;#292;</div>
+						<div><strong>character:</strong> &#292;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-instagram"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-instagram</div>
+						<div><strong>html:</strong> &amp;#320;</div>
+						<div><strong>character:</strong> &#320;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-email"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-email</div>
+						<div><strong>html:</strong> &amp;#321;</div>
+						<div><strong>character:</strong> &#321;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-facebook"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-facebook</div>
+						<div><strong>html:</strong> &amp;#322;</div>
+						<div><strong>character:</strong> &#322;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-facebook-2"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-facebook-2</div>
+						<div><strong>html:</strong> &amp;#323;</div>
+						<div><strong>character:</strong> &#323;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-heart"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-heart</div>
+						<div><strong>html:</strong> &amp;#324;</div>
+						<div><strong>character:</strong> &#324;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-twitter"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-twitter</div>
+						<div><strong>html:</strong> &amp;#325;</div>
+						<div><strong>character:</strong> &#325;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-link"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-link</div>
+						<div><strong>html:</strong> &amp;#326;</div>
+						<div><strong>character:</strong> &#326;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-cell-phone"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-cell-phone</div>
+						<div><strong>html:</strong> &amp;#327;</div>
+						<div><strong>character:</strong> &#327;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-phone"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-phone</div>
+						<div><strong>html:</strong> &amp;#328;</div>
+						<div><strong>character:</strong> &#328;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-share"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-share</div>
+						<div><strong>html:</strong> &amp;#329;</div>
+						<div><strong>character:</strong> &#329;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-share-2"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-share-2</div>
+						<div><strong>html:</strong> &amp;#336;</div>
+						<div><strong>character:</strong> &#336;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-message"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-message</div>
+						<div><strong>html:</strong> &amp;#337;</div>
+						<div><strong>character:</strong> &#337;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-you-tube"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-you-tube</div>
+						<div><strong>html:</strong> &amp;#338;</div>
+						<div><strong>character:</strong> &#338;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-spotify"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-spotify</div>
+						<div><strong>html:</strong> &amp;#339;</div>
+						<div><strong>character:</strong> &#339;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-vimeo"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-vimeo</div>
+						<div><strong>html:</strong> &amp;#340;</div>
+						<div><strong>character:</strong> &#340;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-search"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-search</div>
+						<div><strong>html:</strong> &amp;#341;</div>
+						<div><strong>character:</strong> &#341;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-g-plus"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-g-plus</div>
+						<div><strong>html:</strong> &amp;#342;</div>
+						<div><strong>character:</strong> &#342;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-rallygate"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-rallygate</div>
+						<div><strong>html:</strong> &amp;#343;</div>
+						<div><strong>character:</strong> &#343;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-tumblr"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-tumblr</div>
+						<div><strong>html:</strong> &amp;#344;</div>
+						<div><strong>character:</strong> &#344;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-star-o"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-star-o</div>
+						<div><strong>html:</strong> &amp;#345;</div>
+						<div><strong>character:</strong> &#345;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-star"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-star</div>
+						<div><strong>html:</strong> &amp;#352;</div>
+						<div><strong>character:</strong> &#352;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-no-image"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-no-image</div>
+						<div><strong>html:</strong> &amp;#353;</div>
+						<div><strong>character:</strong> &#353;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-www-500px"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> www-500px</div>
+						<div><strong>html:</strong> &amp;#354;</div>
+						<div><strong>character:</strong> &#354;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-sign-fight"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> sign-fight</div>
+						<div><strong>html:</strong> &amp;#355;</div>
+						<div><strong>character:</strong> &#355;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-sign-agree"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> sign-agree</div>
+						<div><strong>html:</strong> &amp;#356;</div>
+						<div><strong>character:</strong> &#356;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-sign-press"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> sign-press</div>
+						<div><strong>html:</strong> &amp;#357;</div>
+						<div><strong>character:</strong> &#357;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-sign-crossed"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> sign-crossed</div>
+						<div><strong>html:</strong> &amp;#358;</div>
+						<div><strong>character:</strong> &#358;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-sign-hit"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> sign-hit</div>
+						<div><strong>html:</strong> &amp;#359;</div>
+						<div><strong>character:</strong> &#359;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-sign-stop"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> sign-stop</div>
+						<div><strong>html:</strong> &amp;#360;</div>
+						<div><strong>character:</strong> &#360;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-sign-point"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> sign-point</div>
+						<div><strong>html:</strong> &amp;#361;</div>
+						<div><strong>character:</strong> &#361;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-misc-cross"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> misc-cross</div>
+						<div><strong>html:</strong> &amp;#384;</div>
+						<div><strong>character:</strong> &#384;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-misc-x"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> misc-x</div>
+						<div><strong>html:</strong> &amp;#385;</div>
+						<div><strong>character:</strong> &#385;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-misc-peace"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> misc-peace</div>
+						<div><strong>html:</strong> &amp;#386;</div>
+						<div><strong>character:</strong> &#386;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-misc-megaphone"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> misc-megaphone</div>
+						<div><strong>html:</strong> &amp;#387;</div>
+						<div><strong>character:</strong> &#387;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-misc-flower"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> misc-flower</div>
+						<div><strong>html:</strong> &amp;#388;</div>
+						<div><strong>character:</strong> &#388;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-misc-chair"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> misc-chair</div>
+						<div><strong>html:</strong> &amp;#389;</div>
+						<div><strong>character:</strong> &#389;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-misc-map-point"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> misc-map-point</div>
+						<div><strong>html:</strong> &amp;#390;</div>
+						<div><strong>character:</strong> &#390;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-misc-certificate"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> misc-certificate</div>
+						<div><strong>html:</strong> &amp;#391;</div>
+						<div><strong>character:</strong> &#391;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-misc-certificate-o"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> misc-certificate-o</div>
+						<div><strong>html:</strong> &amp;#392;</div>
+						<div><strong>character:</strong> &#392;</div>
+					</div>
+				</div>
+				
+				<div class="icon-item" onclick="">
+					<i class="icon hf hf-misc-ac"></i>
+					<div class="icon-caption">
+						<div><strong>css:</strong> misc-ac</div>
+						<div><strong>html:</strong> &amp;#393;</div>
+						<div><strong>character:</strong> &#393;</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="section">
+				<h2>Effects</h2>
+				<div class="margin-top-30">
+
+					<div class="demo-item">
+						<h4>Horizontal</h4>
+						<i class="demo-icon hf hf-sign-point hf-horizontal hf-animated hf-3x"></i>
+						<code class="demo-text">&lt;i class="hf hf-sign-point hf-horizontal hf-animated hf-3x"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+					<div class="demo-item">
+						<h4>Spin</h4>
+						<i class="demo-icon hf hf-misc-certificate-o hf-spin hf-animated hf-3x"></i>
+						<code class="demo-text">&lti class="hf hf-misc-certificate-o hf-spin hf-animated hf-3x"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+					<div class="demo-item">
+						<h4>Slow</h4>
+						<i class="demo-icon hf hf-misc-certificate hf-slow hf-spin hf-animated hf-3x"></i>
+						<code class="demo-text">&lti  class="hf hf-misc-certificate hf-slow hf-spin hf-animated hf-3x"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+					<div class="demo-item">
+						<h4>Fast</h4>
+						<i class="demo-icon hf hf-misc-cross hf-fast hf-spin hf-animated hf-3x"></i>
+						<code class="demo-text">&lti class="hf hf-misc-cross hf-fast hf-spin hf-animated hf-3x"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+					<div class="demo-item">
+						<h4>Shadow, vertical small</h4>
+						<i class="demo-icon hf hf-festival-wifi hf-shadow-vertical-small hf-3x"></i>
+						<code class="demo-text">&lti class="demo-icon hf hf-festival-wifi hf-shadow-vertical-small hf-3x"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+					<div class="demo-item">
+						<h4>Shadow, vertical & horizontal small</h4>
+						<i class="demo-icon hf hf-festival-anchor hf-shadow-vertical-horizontal-small hf-3x"></i>
+						<code class="demo-text">&lti class="hf hf-festival-anchor hf-shadow-vertical-horizontal-small hf-3x"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+					<div class="demo-item">
+						<h4>Pulse</h4>
+						<i class="demo-icon hf hf-www-heart hf-pulse hf-fast hf-animated hf-3x"></i>
+						<code class="demo-text">&lti class="hf hf-www-heart hf-pulse hf-fast hf-animated hf-3x"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+					<div class="demo-item">
+						<h4>Float</h4>
+						<i class="demo-icon hf hf-activity-yoga hf-float hf-animated hf-3x"></i>
+						<code class="demo-text">&lti class="hf hf-activity-yoga hf-float hf-animated hf-3x"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+					<div class="demo-item">
+						<h4>Shake</h4>
+						<i class="demo-icon hf hf-www-email hf-shake hf-animated hf-3x"></i>
+						<code class="demo-text">&lti class="hf hf-www-email hf-shake hf-animated hf-3x"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+					<div class="demo-item">
+						<h4>Tada</h4>
+						<i class="demo-icon hf hf-logo-hallifornia hf-tada hf-animated hf-3x"></i>
+						<code class="demo-text">&lti class="hf hf-logo-hallifornia hf-tada hf-animated hf-3x"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+					<div class="demo-item">
+						<h4>Burst</h4>
+						<i class="demo-icon hf hf-misc-ac hf-burst hf-animated hf-3x"></i>
+						<code class="demo-text">&lti class="hf hf-misc-ac hf-burst hf-animated hf-3x"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+					<div class="demo-item">
+						<h4>Passing</h4>
+						<i class="demo-icon hf hf-www-twitter hf-passing hf-animated hf-3x"></i>
+						<code class="demo-text">&lti class="hf hf-www-twitter hf-passing hf-animated hf-3x"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+					<div class="demo-item">
+						<h4>Passing reverse</h4>
+						<i class="demo-icon hf hf-activity-4x4 hf-passing-reverse hf-animated hf-3x"></i>
+						<code class="demo-text">&lti class="hf hf-activity-4x4 hf-passing-reverse hf-animated hf-3x"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+					<div class="demo-item">
+						<h4>Flip horizontal</h4>
+						<i class="demo-icon hf hf-activity-4x4 hf-animated hf-3x hf-flip-horizontal"></i>
+						<code class="demo-text">&lti class="hf hf-activity-4x4 hf-animated hf-3x hf-flip-horizontal"&gt;&lt;/i&gt;</code>
+						<br class="clear-both" />
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		
+			<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-74354099-1', 'auto');
+				ga('send', 'pageview');
+			</script>
+		
+
+	</body>
+</html>
